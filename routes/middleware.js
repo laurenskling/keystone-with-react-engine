@@ -21,10 +21,12 @@ exports.initLocals = function (req, res, next) {
 	res.locals.navLinks = [
 		{ label: 'Home', key: 'home', href: '/' },
 	];
-	res.locals.user = {
-		...req.user,
-		canAccessKeystone: req.user.canAccessKeystone, // convert from virtual to value, virtual doesn't work from Props
-	};
+	if (req.user) {
+		res.locals.user = {
+			...req.user,
+			canAccessKeystone: req.user.canAccessKeystone, // convert from virtual to value, virtual doesn't work from Props
+		};
+	}
 	next();
 };
 
