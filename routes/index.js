@@ -33,8 +33,11 @@ var routes = {
 
 // Setup Route Bindings
 exports = module.exports = function (app) {
-	// Views
-	// app.get('/', routes.views.index);
+	// Add props to locals via middleware functions
+	app.get('/', routes.views.index);
+	app.get('/blog', routes.views.blog);
+
+	// add React Router routes
 	require('./router')(app);
 
 	// NOTE: To protect a route so that only admins can see it, use the requireUser middleware:

@@ -4,9 +4,9 @@ const ReactEngine = require('react-engine');
 
 module.exports = (app) => {
     app.get('*', function(req, res) {
-        console.log(req.url);
+        console.log('Requested url: ', req.url);
         const props = {
-            title: 'test from props',
+            ...res.locals,
         };
         res.render(req.url, props);
     });
