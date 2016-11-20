@@ -112,8 +112,6 @@
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
-	console.log('router');
-	
 	module.exports = _react2.default.createElement(
 	  _reactRouter.Router,
 	  null,
@@ -121,7 +119,8 @@
 	    _reactRouter.Route,
 	    { path: '/', component: _default2.default },
 	    _react2.default.createElement(_reactRouter.IndexRoute, { component: _index2.default }),
-	    _react2.default.createElement(_reactRouter.Route, { path: 'blog', component: _blog2.default })
+	    _react2.default.createElement(_reactRouter.Route, { path: 'blog', component: _blog2.default }),
+	    _react2.default.createElement(_reactRouter.Route, { path: 'blog/:id', component: _blog2.default })
 	  )
 	);
 
@@ -9447,6 +9446,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
 	var Blog = function Blog(props) {
+		console.log(props);
 		return _react2.default.createElement(
 			"div",
 			{ className: "container" },

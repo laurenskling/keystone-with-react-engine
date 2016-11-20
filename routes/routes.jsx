@@ -12,6 +12,7 @@ module.exports = (
     <Route path="/" component={Layout}>
       <IndexRoute component={Index} />
       <Route path="blog" component={Blog} />
+      <Route path="blog/:id" component={Blog} />
       {/* ... */}
     </Route>
   </Router>

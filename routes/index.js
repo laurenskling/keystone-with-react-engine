@@ -36,6 +36,7 @@ exports = module.exports = function (app) {
 	// Add props to locals via middleware functions
 	app.get('/', routes.views.index);
 	app.get('/blog', routes.views.blog);
+	app.get('/blog/:id', routes.views.blogitem);
 
 	// add React Router routes
 	require('./router')(app);

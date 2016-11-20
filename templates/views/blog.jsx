@@ -1,6 +1,7 @@
 import React from 'react';
 
 const Blog = (props) => {
+	console.log(props);
 	return (
 		<div className="container">
 			Welcome to the blog
