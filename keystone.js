@@ -1,3 +1,4 @@
+const path = require('path');
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
 require('dotenv').config();
@@ -7,10 +8,14 @@ var keystone = require('keystone');
 // Require the react engine
 var renderer = require('react-engine');
 
+var routesFile = path.join(__dirname, 'routes', 'routes.jsx');
+
 var engine = renderer.server.create({
 	performanceCollector: function(stats) {
 	    console.log(stats);
 	},
+	routes: require(routesFile),
+  	routesFilePath: routesFile,
 	// your options here
 });
 

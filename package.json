@@ -18,6 +18,7 @@
     "react": "^15.4.0",
     "react-dom": "^15.4.0",
     "react-engine": "^4.2.0",
+    "react-router": "^3.0.0",
     "webpack": "^1.13.3"
   },
   "devDependencies": {
@@ -27,6 +28,6 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "start": "webpack && node preprocessor.js"
+    "start": "node preprocessor.js"
   }
 }
