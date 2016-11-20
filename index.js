@@ -18,14 +18,14 @@
 'use strict';
 
 // import the react-router routes
-// var Routes = require('./routes.jsx');
+var Routes = require('./routes/routes.jsx');
 
 // import the react-engine's client side booter
 var ReactEngineClient = require('react-engine/lib/client');
 
 // boot options
 var options = {
-  // routes: Routes,
+  routes: Routes,
 
   // supply a function that can be called
   // to resolve the file that was rendered.
