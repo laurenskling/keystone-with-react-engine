@@ -134,7 +134,7 @@ const Default = (props) => {
 					<script src="/keystone/js/content/editor.js"></script>
 				}
 
-				<script src="/js/bundle.js"></script>
+				{/* <script src="/js/bundle.js"></script> */}
 
 				{
 					//- Add scripts that are globally required by your site here.
