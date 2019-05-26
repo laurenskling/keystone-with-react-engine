@@ -1,3 +1,5 @@
+/* eslint-disable indent */
+/* eslint-disable no-mixed-spaces-and-tabs */
 // Simulate config options from your production environment by
 // customising the .env file in your project's root folder.
 require('dotenv').config();
@@ -8,8 +10,8 @@ var keystone = require('keystone');
 var renderer = require('react-engine');
 
 var engine = renderer.server.create({
-	performanceCollector: function(stats) {
-	    console.log(stats);
+	performanceCollector: function (stats) {
+	    	console.log(stats);
 	},
 	// your options here
 });

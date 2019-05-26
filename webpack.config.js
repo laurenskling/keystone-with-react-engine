@@ -1,6 +1,7 @@
+/* eslint-disable indent */
 // Extended from:
 
-/*-------------------------------------------------------------------------------------------------------------------*\
+/* -------------------------------------------------------------------------------------------------------------------*\
 |  Copyright (C) 2016 PayPal                                                                                          |
 |                                                                                                                     |
 |  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance     |
